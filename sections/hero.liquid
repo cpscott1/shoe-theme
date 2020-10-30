@@ -1,0 +1,22 @@
+<section class="hero">
+  <img src="{{ section.settings.hero }}" alt="hero image">
+</section>
+
+{% schema %}
+{
+  "name": "hero",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "hero",
+      "label": "Hero"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero",
+      "category": "Image"
+    }
+  ]
+}
+{% endschema %}
