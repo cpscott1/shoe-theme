@@ -1,5 +1,7 @@
 <section class="hero">
-  <img src="{{ section.settings.hero }}" alt="hero image">
+  <div class="image-container">
+    <img src="{{ section.settings.hero | img_url: 'small' }}" alt="hero image">
+  </div>
 </section>
 
 {% schema %}
